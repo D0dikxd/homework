@@ -1,0 +1,24 @@
+.open-sans {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.loremen {
+    text-decoration: line-through;
+}
+.caps {
+    text-transform: uppercase;
+    text-align: center;
+}
+.purple {
+    text-shadow: 1px 1px 1px #c4109783;
+    word-spacing: 30px;
+    text-decoration: overline wavy;
+}
+.underlined {
+    text-decoration: underline double;
+    letter-spacing: 5px;
+}
