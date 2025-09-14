@@ -1,0 +1,29 @@
+.block-1 {
+    box-sizing: border-box;
+    border: 1px solid black;
+    height: 800px;
+    border-radius: 20px 0px 0px 20px;
+    overflow: auto;
+}
+.block-2 {
+    box-sizing: border-box;
+    background: #c59f74;
+    width: 500px;
+    height: 340px;
+    border: 1px solid black;
+    border-radius: 40px;
+    padding: 50px 30px 30px 30px;
+    box-shadow: inset 1px 1px 20px black;
+    display: inline-block;
+    margin: 10px;
+}
+.inline-1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+.inline-2 {
+    box-sizing: border-box;
+    font-size: 27px;
+    padding-top: 40px;
+    text-align: left;
+}
