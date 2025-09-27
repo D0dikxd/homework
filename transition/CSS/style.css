@@ -1,0 +1,38 @@
+body {
+    background-color: rgb(16, 16, 22);
+}
+.quad {
+    background-color: rgb(65, 64, 64);
+    width: 400px;
+    height: 400px;
+    position: relative;
+    margin: 400px auto;
+    display: flex;
+}
+.quad::after {
+    content: 'Успех!';
+    font-size: 20px;
+    margin: 180px auto;
+    color: rgb(65, 64, 64);
+}
+.quad::before {
+    content: '';
+    width: 0px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: -50%;
+    left: -200px;
+}
+.quad:hover::after {
+    color: green;
+    transition-delay: 2s;
+    transition-duration: 0.4s;
+}
+.scale:hover {
+    width: 800px;
+}
+.quad:hover::before {
+    width: 800px;
+    transition-duration: 2s;
+}
