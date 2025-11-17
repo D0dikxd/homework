@@ -1,0 +1,231 @@
+
+.header {
+    padding-top: 10px;
+    background: url("../img/decor/bg-header.png") 50% 100% / cover no-repeat;
+}
+
+.header__logo {
+    z-index: 11;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.header__nav-menu-list {
+    min-width: 514px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    font-family: var(--font-family);
+    color: var(--nabornyy);
+    font-weight: 400;
+}
+
+.header__nav-item {
+    position: relative;
+    z-index: 1;
+}
+
+.header__nav-item::before {
+    content: '';
+    position: absolute;
+    top: -14px;
+    left: -14px;
+    height: 34px;
+    width: 34px;
+    border-radius: 100%;
+    background-color: var(--akcentnyy);
+    z-index: -1;
+    opacity: 0;
+    transition-duration: .6s;
+}
+
+.header__nav-item:hover:before {
+    opacity: 1;
+}
+
+.burger__icon {
+    z-index: 11;
+    display: none;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.burger__icon span {
+    background-color: var(--zagolovochnyy);
+    width: 30px;
+    height: 3px;
+    border-radius: 100px;
+    position: relative;
+    transition: all 0.4s;
+}
+
+.burger__icon span::after,
+.burger__icon span::before {
+    content: '';
+    position: absolute;
+    background-color: var(--zagolovochnyy);
+    width: 30px;
+    height: 3px;
+    border-radius: 100px;
+    transition: all 0.4s;
+}
+
+.burger__icon span::before {
+    top: -8px;
+}
+
+.burger__icon span::after {
+    bottom: -8px;
+}
+
+.body--opened-menu .burger__icon span {
+    background: transparent;
+}
+
+.body--opened-menu .burger__icon span::before {
+    top: 0px;
+    transform: rotate(45deg);
+}
+
+.body--opened-menu .burger__icon span::after {
+    bottom: 0px;
+    transform: rotate(-45deg);
+}
+
+.welcome__block {
+    padding: 50px 0 140px;
+    display: flex;
+}
+
+.welcome__text {
+    max-width: 519px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.welcome__text-start {
+    color: #B197B3;
+    text-transform: uppercase;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.welcome__text-start span::after {
+    content: '';
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #b197b2;
+    display: inline-block;
+    margin: 4px 10px;
+}
+
+.welcome__text-start span:last-child::after {
+    content: none;
+}
+
+.welcome__text-title {
+    font-family: 'Gabriola';
+    font-size: 74px;
+    line-height: 0.82;
+    margin-bottom: 30px;
+}
+
+.welcome__text-p {
+    margin-bottom: 40px;
+}
+
+.welcome__text-button {
+    border-radius: 60px;
+    padding: 18px 36px;
+    width: 100%;
+    max-width: 360px;
+    height: 62px;
+    background: var(--akcentnyy);
+    border: none;
+    font-family: var(--font-family);
+    font-weight: 500;
+    line-height: 1.6;
+    text-align: center;
+    color: var(--nabornyy);
+    font-size: 16px;
+    transition-duration: .6s;
+}
+
+.welcome__text-button:hover {
+    background: #ff9138;
+}
+
+.welcome__img-block {
+    position: relative;
+    margin-right: 247px;
+    margin-left: 137px;
+}
+
+.welcome__img-block>img {
+    max-width: 100%;
+}
+
+.welcome__img-control {
+    position: absolute;
+    bottom: 11%;
+    left: calc(100% - 39px);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 200px;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.welcome__img-control--mobile {
+    display: none;
+}
+
+.welcome__img-button {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+    background: #FFE0CB;
+    box-shadow: 0px 4px 20px rgba(184, 148, 126, 0.3);
+    position: relative;
+}
+
+.welcome__img-button::after {
+    content: '';
+    position: absolute;
+    inset: 5px;
+    border: 1px solid var(--akcentnyy);
+    border-radius: 50%;
+    opacity: 0;
+    transition-duration: 0.6s;
+}
+
+.welcome__img-button:hover::after {
+    opacity: 100;
+}
+
+.welcome-img {
+    position: absolute;
+    top: 25px;
+    left: 27px;
+
+}
+
+.welcome__img-button-p {
+    max-width: 112px;
+    position: absolute;
+    left: calc(10px + 70%);
+}
